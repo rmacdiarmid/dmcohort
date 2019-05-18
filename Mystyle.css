@@ -1,0 +1,262 @@
+/* myStyle.css */
+
+html, body {
+margin: 0;
+ background-color: white;
+ color: black;
+    width: 100%;
+    height: 100%;
+    
+}
+h1 {
+    color: white;
+    background-color: black;
+    padding: 20px;
+    text-align: center;
+    font-family: 'Permanent Marker', sans-serif;
+    font-weight: 400;
+}
+h2 {
+    color: black;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    font: 100%;
+    }
+h3 { 
+display:inline-block; 
+    color: black;
+ text-align: center;
+ font-family: 'Varela', sans-serif;
+    font-weight: 400;
+ font: 100%;
+    margin-top: 5px; 
+    margin-left: auto; 
+    margin-right: auto;
+    width: 100%;
+}
+p {
+    font-family: 'Open Sans', sans-serif;
+    background-color: white;
+    color: dimgray;
+    text-align: left;
+    border: 0px groove #FFFF33;
+    font-weight: 400;
+    padding: 5px 20px 50px 20px;
+    line-height: 1.6em;
+    max-width: 800px;
+    }
+a {
+    color: cadetblue;
+    text-decoration: none;
+}
+ul {
+    font-family: 'Open sans', sans-serif;
+    color: dimgray;
+}
+li {
+    margin-top: 10px;
+}
+#logo {
+    margin-top: 50px;
+}
+#logo img {
+    width: 60%;
+}
+
+@media (max-width: 767px) {
+    #logo img {
+         width: 80%;
+    }
+    
+    
+}
+.EFCAlogo {
+ display: block;
+  margin-left: auto;
+  margin-right: auto;
+margin-top: 50px;
+    margin-bottom: 50px;
+  width: 100px; 
+}
+.topnav {
+    overflow: hidden;
+    background-color: #000;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    }
+.topnav a {
+    float: left;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    }
+.topnav a:hover {
+  background-color: cadetblue;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 30%;  
+}
+.centerlodging {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;  
+}
+
+
+/* CONTENT WRAPPER */
+
+.wrapper {
+    display: flex;
+    width: 100%;
+    flex-flow: row;
+    align-content: flex-start;
+    align-items: flex-start;
+    justify-content: center;
+    border: solid 1px red;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+.content {
+    width: 45%;
+    margin-top: 0;
+    margin-left: auto;
+    margin-right: auto;
+    border: solid 1px red;
+    min-width: 400px;
+}
+/* @media (max-width: 767px) {
+    .wrapper {
+        flex-direction: column;
+        justify-content: center;
+        
+    }
+} */
+
+/* BUTTONS    */
+.button-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: flex-start;
+    flex-direction: row;
+    justify-content: center;
+}
+@media (max-width: 767px) {
+    .button-containter {
+        flex-direction: column;
+    }
+}
+    
+.button_1 {
+    order: 1;
+    background-color: white;
+    border: solid 1px dimgrey;
+    color: dimgray;
+    font-size: 100%; 
+    padding: 20px 40px;
+    text-align: center;
+    text-decoration: none;
+   /* margin: 4px 5%;*/
+    margin: auto;
+    cursor: pointer;
+    max-width: 300px;
+}
+.button_2 {
+    order: 2;
+    background-color: white;
+    border: solid 1px dimgrey;
+    color: dimgray;
+    font-size: 100%; 
+    padding: 20px 40px;
+    text-align: center;
+    text-decoration: none;
+   /* margin: 4px 5%;*/
+    margin: auto;
+    cursor: pointer;
+    max-width: 300px;
+}
+
+.button:hover {
+  background-color: cadetblue;
+    color: white;
+}
+.fullimg {
+    Font-size: 0px;
+    margin: 0px; 
+}
+
+/*DATES*/
+.wrapper-dates {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    border: 1px solid blue;
+}
+
+.flex-item {
+    flex: 25%;
+    list-style: none;
+    margin-top: 10px;
+    padding: 10px;
+    text-align: center;
+    background-color: white;
+}
+
+/*PROFILES*/
+.profile-container {
+    display: flex;
+    flex-flow: row;
+    align-items: flex-start;
+    justify-content: center;
+    align-content: flex-start;
+    flex-wrap: wrap;
+}
+/*.da-trainers {
+    order: 1;
+    flex-grow: 1;
+    width: 100%;
+    margin: auto;
+}*/
+
+.profile {
+    order: 1;
+    width: 33%;
+    margin-top: 0;
+    min-width: 300px;
+    align-self: auto;
+    border: solid 1px red;
+}
+
+@media (max-width: 767px) {
+    .profile-containter {
+        flex-flow: column;
+        flex-direction: column;
+    }
+    .profile {
+    width: 800px;
+    margin-top: 0;
+    align-self: auto;
+    }
+}
+
+.profileimg {
+    border-radius: 50%;
+}
+.testimonials {
+    font-style: italic;
+    font-weight: 300;
+}
